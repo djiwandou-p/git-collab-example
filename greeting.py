@@ -1,5 +1,8 @@
-# greeting.py — starting file (repo owner creates this and pushes to GitHub)
+def hitung_total(harga, qty, diskon_persen=0):
 
+    total = harga * qty
+
+    return total - (total * diskon_persen / 100)
 def greet(name):
     message = "Hello, amanda branch edit 2" + name + "!"  # ← you and your partner will both edit this line
     return message
@@ -7,6 +10,8 @@ def greet(name):
 def farewell(name):
     return "Goodbye, amanda branchedit 2" + name + "!"
 
-if __name__ == "__main__":
-    print(greet("World"))
-    print(farewell("World"))
+ 
+
+# contoh pakai
+
+print(hitung_total(50000, 3, 10))  # 135000.0
